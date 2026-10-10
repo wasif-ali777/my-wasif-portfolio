@@ -2,9 +2,9 @@ import type { ReactNode } from 'react';
 import Image from 'next/image';
 
 const skills = [
-  { group: 'Languages', items: ['Python', 'C++', 'C#'] },
-  { group: 'Data & analysis', items: ['Pandas', 'NumPy', 'Data Analysis', 'Problem Solving'] },
-  { group: 'Tools & interests', items: ['Visual Studio', 'Unity (basic)', 'Software Development', 'AI / Machine Learning'] },
+  { group: 'Languages', items: ['Python', 'C++', 'C#', 'HTML', 'CSS', 'Javascript', 'React', 'Next.js', 'Node.js', 'MySQL'] },
+  { group: 'Data & analysis', items: ['Pandas', 'NumPy','Matplotlib', 'Data Analysis', 'Problem Solving'] },
+  { group: 'Tools & interests', items: ['Visual Studio', 'Unity (basic)', 'Software Development', 'AI / Machine Learning', 'NLP', 'LLM'] },
 ];
 
 const projects = [
