@@ -1,13 +1,16 @@
 # Wasif Ali — Portfolio
 
-A responsive, dark navy + mint portfolio built with Next.js App Router, React, TypeScript, and custom CSS. It is prepared for deployment on Vercel.
+A responsive, white maximalist portfolio with bold black typography, lime accents, motion, and a profile portrait built with Next.js App Router, React, TypeScript, and custom CSS. It is prepared for deployment on Vercel.
 
 ## Included
 
 - Responsive landing page and mobile layouts
 - About, skills, project, education/certification, and contact sections
-- Links to GitHub and LinkedIn
+- Links to GitHub and LinkedIn, plus Instagram, Facebook, and WhatsApp placeholders
 - SkillBridge_AI project section with a clearly labeled illustrative UI preview
+- Uploaded profile portrait in `public/wasif-profile.jpeg`
+- Problem → solution storytelling section for SkillBridge_AI
+- Animated portrait, floating elements, hover effects, and ticker
 - Reduced-motion support and keyboard focus styles
 - Basic SEO metadata
 
@@ -37,6 +40,8 @@ To check the production build, run `npm run build`.
 
 ## Personalization checklist before publishing
 
+- Replace the placeholder Instagram and Facebook URLs in `app/page.tsx` with your actual profile URLs.
+- Replace `https://wa.me/` with `https://wa.me/92XXXXXXXXXX` using your WhatsApp number in international format without `+`, spaces, or dashes.
 - Confirm the exact wording of your degree status and certification.
 - Add your real email address if you want a direct email contact link.
 - Add your final CV PDF to `public/` and link it from the navigation if you want a downloadable resume.

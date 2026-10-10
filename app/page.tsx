@@ -1,9 +1,10 @@
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 
 const skills = [
-  { group: 'Languages', items: ['Python', 'C++', 'C#', 'HTML', 'CSS', 'JavaScript', 'Next.js', 'React.js', 'MySQL'] },
-  { group: 'Data & analysis', items: ['Pandas', 'NumPy','Matplotlib', 'Data Analysis', 'Problem Solving', 'Supabase'] },
-  { group: 'Tools & interests', items: ['Visual Studio', 'Unity (basic)', 'Software Development', 'AI / Machine Learning', 'NLP', 'LLM', 'Microsoft Azure'] },
+  { group: 'Languages', items: ['Python', 'C++', 'C#'] },
+  { group: 'Data & analysis', items: ['Pandas', 'NumPy', 'Data Analysis', 'Problem Solving'] },
+  { group: 'Tools & interests', items: ['Visual Studio', 'Unity (basic)', 'Software Development', 'AI / Machine Learning'] },
 ];
 
 const projects = [
@@ -57,12 +58,19 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/sheikhwasif" target="_blank" rel="noreferrer"><Mark>in</Mark> LinkedIn</a>
               <span className="social-separator">/</span>
               <a href="#contact"><Mark>@</Mark> Contact</a>
+              <span className="social-separator">/</span>
+              <a href="https://instagram.com/" target="_blank" rel="noreferrer"><Mark>IG</Mark> Instagram</a>
+              <a href="https://facebook.com/" target="_blank" rel="noreferrer"><Mark>f</Mark> Facebook</a>
+              <a href="https://wa.me/" target="_blank" rel="noreferrer"><Mark>WA</Mark> WhatsApp</a>
             </div>
           </div>
-          <div className="hero-art" aria-label="Decorative code illustration">
-            <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
-            <div className="glow-ball" />
-            <div className="code-card">
+          <div className="hero-art profile-art" aria-label="Portrait of Wasif Ali">
+            <div className="profile-shape shape-one">BUILD<br/>WITH<br/>PURPOSE</div>
+            <div className="profile-shape shape-two">AI ✳</div>
+            <div className="profile-photo-frame"><Image src="/wasif-profile.jpeg" alt="Wasif Ali profile photo" width={520} height={700} priority className="profile-photo" /></div>
+            <div className="profile-sticker"><span>✳</span><b>SOFTWARE<br/>ENGINEER</b></div>
+            <div className="profile-caption">CURIOUS BY NATURE · BUILDER BY CHOICE</div>
+            <div className="code-card mini-code-card">
               <div className="code-top"><div className="window-dots"><i /><i /><i /></div><span>wasif.py</span><span className="code-lock">●</span></div>
               <div className="code-body">
                 <div><span className="line-number">01</span><span className="code-purple">class</span> <span className="code-mint">Engineer</span>:</div>
@@ -99,6 +107,16 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="problem-section" id="approach">
+          <div className="problem-top"><span className="section-index">MY APPROACH / 01</span><span className="problem-stamp">PROBLEM → SOLUTION</span></div>
+          <div className="problem-grid">
+            <article className="problem-panel problem-card"><span className="problem-kicker">THE PROBLEM</span><h2>Skills are hard to map to the next step.</h2><p>Learners can struggle to understand where their current skills fit and what area to explore next.</p><span className="big-symbol">?</span></article>
+            <div className="problem-arrow" aria-hidden="true">↘</div>
+            <article className="problem-panel solution-card"><span className="problem-kicker">THE PROJECT APPROACH</span><h2>Make assessment more actionable.</h2><p>SkillBridge_AI is designed around domain-based assessments and recommendations to help learners reflect on strengths and possible next steps.</p><span className="big-symbol">✳</span></article>
+          </div>
+          <p className="problem-footnote">Project description reflects the intended workflow; outcomes are not claimed as measured results.</p>
+        </section>
+
         <section className="section skills-section" id="skills">
           <div className="section-heading"><span className="section-index">02 / TOOLKIT</span><h2>Skills I&apos;m <span className="muted-heading">building on.</span></h2><p className="section-subtitle">A snapshot of my current technical toolkit and areas of interest.</p></div>
           <div className="skills-grid">{skills.map((skill, index) => <article className="skill-card" key={skill.group}><div className="skill-card-top"><span className="skill-number">0{index + 1}</span><span className="skill-spark">✳</span></div><h3>{skill.group}</h3><div className="skill-tags">{skill.items.map((item) => <span key={item}>{item}</span>)}</div></article>)}</div>
@@ -123,7 +141,7 @@ export default function Home() {
 
         <section className="contact-section" id="contact"><div className="contact-orb orb-a" /><div className="contact-orb orb-b" /><div className="contact-content"><span className="section-index">05 / GET IN TOUCH</span><h2>Have an interesting<br />problem to <span className="gradient-text">solve?</span></h2><p>I&apos;m open to connecting with people working in software, AI/ML, and technology. Let&apos;s connect.</p><div className="contact-actions"><a className="button button-primary" href="https://www.linkedin.com/in/sheikhwasif" target="_blank" rel="noreferrer">Message me on LinkedIn <ArrowUpRight /></a><a className="button button-quiet" href="https://github.com/wasif-ali777" target="_blank" rel="noreferrer">Find me on GitHub <ArrowUpRight /></a></div></div><div className="contact-watermark">LET&apos;S BUILD</div></section>
 
-        <footer className="footer"><a className="brand footer-brand" href="#home"><span className="brand-symbol">W</span><span>wasif<span className="mint">.dev</span></span></a><span className="footer-copy">Designed &amp; built with curiosity.</span><div className="footer-links"><a href="https://github.com/wasif-ali777" target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a><a href="https://www.linkedin.com/in/sheikhwasif" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a></div><span className="copyright">© {new Date().getFullYear()} Wasif Ali</span></footer>
+        <footer className="footer"><a className="brand footer-brand" href="#home"><span className="brand-symbol">W</span><span>wasif<span className="mint">.dev</span></span></a><span className="footer-copy">Designed &amp; built with curiosity.</span><div className="footer-links"><a href="https://github.com/wasif-ali777" target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a><a href="https://www.linkedin.com/in/sheikhwasif" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram <ArrowUpRight /></a><a href="https://facebook.com/" target="_blank" rel="noreferrer">Facebook <ArrowUpRight /></a><a href="https://wa.me/" target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight /></a></div><span className="copyright">© {new Date().getFullYear()} Wasif Ali</span></footer>
       </div>
     </main>
   );
