@@ -45,7 +45,7 @@ export default function Home() {
 
         <section className="hero" id="home">
           <div className="hero-copy">
-            <div className="eyebrow"><span className="status-dot" /> COMPUTER SCIENCE · SOFTWARE · AI</div>
+            <div className="eyebrow"><span className="status-dot" /> COMPUTER SCIENCE · SOFTWARE ENGINEER · AI ENGINEER</div>
             <h1>Building thoughtful<br />software for a <span className="gradient-text">smarter world.</span></h1>
             <p className="hero-intro">I&apos;m <strong>Wasif Ali</strong> — a Computer Science professional-in-training interested in software engineering, AI/ML, and turning practical problems into useful digital solutions.</p>
             <div className="hero-actions">
